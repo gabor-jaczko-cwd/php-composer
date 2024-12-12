@@ -8,4 +8,4 @@ FROM php:${PHP_VERSION:-8}-cli
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set the default command
-CMD ["composer"]
+ENTRYPOINT ["composer"]
